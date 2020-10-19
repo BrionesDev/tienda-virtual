@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d0fad2;
+}
+
+.container {
+    width: 95%;
+    max-width: 900px;
+    padding: 32px 64px;
+    margin: auto;
+}
+
+.social {
+    /* las imágenes usadas tienen width de 48px */
+    width: 48px;
+    position: fixed;
+    top: 50px;
+    right: 0;
+}
+
+
+/* Extra centrado vertical */
+
+.social {
+    /* border:1px solid #000; */
+    top: 50%;
+    height: 205px;
+    /* para poner height 192 deberíamos haber indicado en el reset de estilos font-size:0; */
+    margin-top: -100px;
+}
+
+.shared-panel {
+    overflow: auto;
+    text-align: center;
+}
+
+.shared-panel span {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.shared {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 5px 0;
+    padding: 0;
+    /* Recurso incluido en la descarga del ejemplo */
+    background: url("shared.png") no-repeat;
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.shared:hover {
+    opacity: 0.7;
+}
+
+.shared.gp {
+    background-position: 0px 0px;
+    background-color: #E62B34;
+}
+
+.shared.tt {
+    background-position: 0px -30px;
+    background-color: #43BDF0;
+}
+
+.shared.ce {
+    background-position: 0px -60px;
+    background-color: #8A898D;
+}
+
+.shared.wa {
+    background-position: 0px -90px;
+    background-color: #0dc143;
+}
+
+.shared.fb {
+    background-position: 0px -120px;
+    background-color: #6081C4;
+}
+
+.st2 {
+    border-radius: 0;
+}
+
+.st3 {
+    border-radius: 5px;
+}
+
+.dropbtn {
+    background-color: darkorange;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+#EstructuraBotones {
+    position: relative;
+    text-align: center;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #C84300;
+}
+
+.news {
+    display: inline;
+}
+
+.header {
+    text-align: center;
+}
+
+#logo {
+    text-align: right;
+}
+
+#img-new1 {
+    text-align: center;
+    display: block;
+    width: 252px;
+}
+
+#img-mew1>img {
+    display: inline-block;
+}
+
+.new-title {
+    line-height: 5px;
+    font-weight: bold;
+    text-align: center;
+    /*style="text-align: left;"*/
+}
+
+.new-description {
+    text-align: center;
+    /*adding-block: ;*/
+    /*ine-height: 10px;*/
+}
+
+#mainTitle {
+    font-size: 50px;
+    text-align: center;
+    color: darkorange;
+    font-family: 'Staatliches', cursive;
+}
+
+.news {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: block;
+}
+
+.news>ul,
+.news>ul>li>.new>div,
+.news>ul>li>.new>.new--content>div,
+.news>ul>li>.new>.new--content>.new--c--title>h5,
+.news>ul>li>.new>.new--content>.new--c--description>p {
+    width: 100%;
+    display: block;
+}
+
+
+/* .news {
+    overflow: hidden;
+    overflow-x: auto;
+} */
+
+.news>ul {
+    /* white-space: nowrap; */
+}
+
+.news>ul>li {
+    width: auto;
+    max-width: 100%;
+    margin-bottom: 8px;
+    white-space: normal;
+    display: inline-block;
+}
+
+.news>ul>li:not(:last-of-type) {
+    margin-right: 8px;
+}
+
+.news>ul>li>.new {
+    width: 382px;
+    max-width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    display: block;
+}
+
+.news>ul>li>.new>.new--image {
+    background-color: #ccc;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.news>ul>li>.new>.new--image::before {
+    content: '';
+    width: 100%;
+    margin-top: 60%;
+    display: inline-block;
+}
+
+.news>ul>li>.new>.new--content {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.news>ul>li>.new>.new--content>.new--c--title {
+    margin-bottom: 10px;
+}
+
+.news>ul>li>.new>.new--content>.new--c--title>h5 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container-social-networks {
+    width: 100%;
+    text-align: right;
+}
+
+#redes-sociales {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-weight: bold;
+}
+
+
+/*.news>ul>li>.new>.new--content>.new--c--description>p {}*/

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!-- Titulo de la página-->
+    <title>Contacto</title>
+    <!-- Enlace de html con el css-->
+    <link type="text/css" rel="stylesheet" href="css/Contacto.css">
+    <!-- RESET <link type="text/css" rel="stylesheet" href="reset.css">-->
+    <!-- Enlace de html con el js-->
+    <script src="js/Categorias.js" language="javascript" type="text/javascript"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <h1>Contacto</h1>
+    <div id="EstructuraBotones">
+        <!-- Conjunto de botones fijados en cada una de las páginas -->
+        <div class="dropdown"> <button class="dropbtn"><a href="Index.html">Inicio</a></button></div>
+        <div class="dropdown"> <button class="dropbtn"><a href="Contacto.html">Contacto</a></button></div>
+        <div class="dropdown"> <button class="dropbtn"><a href="Cesta.html">Cesta</a></button></div>
+        <div class="dropdown"> <button class="dropbtn"><a href="AboutUs.html">About us</a></button> </div>
+        <div class="dropdown"> <button class="dropbtn"><a href="PreguntasRespuestas.html">Preguntas y Respuestas</a></button></div>
+        <!-- Conjunto de categorías que se mostrarán en el desplegable -->
+        <div class="dropdown"> <button onclick="myFunction()" class="dropbtn">Categorias</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#videojuegos">Videojuegos</a>
+                <a href="#merchandising">Merchandising</a>
+                <a href="#perif%C3%A9ricos">Periféricos</a>
+                <a href="#accesorios">Accesorios</a>
+            </div>
+        </div>
+    </div>
+    <div id="BloquePrincipal">
+        <h2>Datos de Contacto</h2>
+        <!-- Conjunto de campos a rellenar para completar para poder enviar el mensaje  -->
+        <p id="Nombre"><b>Nombre:</b> <input name="nombre" type="text"> </p>
+        <p><b>Email:</b> <input name="email" type="text"></p>
+        <p><b>Telefono:</b> <input name="telefono" type="text"> </p>
+        <div>
+            <!-- Cuadro de texto donde se escribe el mensaje a enviar-->
+            <p> <b>Mensaje:</b> </p>
+            <p> <textarea name="comentarios" rows="7" cols="40">Escriba aquí su mensaje</textarea></p>
+        </div>
+        <!-- Botón para enviar el mensaje  --><button>Enviar Mensaje </button><br>
+        <br>
+    </div>
+    <!-- Conjunto de logos de redes sociales que conducirá a nuestro perfil  -->
+    <div class="shared-panel" id="RedesSociales"> <span>Redes sociales</span><br>
+        <a target="_blank" class="shared fb" title="Facebook"></a>
+        <a target="_blank" class="shared tt" title="Twitter"></a>
+        <a target="_blank" class="shared gp" title="Google+"></a>
+        <a data-action="share/whatsapp/share" class="shared wa" title="WhatsApp"></a>
+        <a target="_blank" class="shared ce" id="sml" title="Email"></a>
+    </div>
+    <!-- Logo de la empresa  --><img id="logo" src="imagenes/logoDefinitivo.png" alt="" longdesc="logoDefinitivo.png">
+</body>
+
+</html>
