@@ -271,5 +271,18 @@ body {
     font-weight: bold;
 }
 
+.new--image2 {
+    background-image: url('imagenes/Noticia2.jpg');
+}
+
+.new--image1 {
+    background-image: url('imagenes/Noticia1.jpg');
+}
+
+hr {
+    color: red;
+    border: 5px;
+}
+
 
 /*.news>ul>li>.new>.new--content>.new--c--description>p {}*/
