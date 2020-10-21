@@ -22,64 +22,85 @@
 </head>
 
 <body>
-    <h1>Cesta</h1>
-    <!-- Conjunto de botones fijados en cada una de las páginas -->
-    <div id="EstructuraBotones">
-        <div class="dropdown"> <button class="dropbtn"><a href="Principal.html">Inicio</a></button></div>
-        <div class="dropdown"> <button class="dropbtn"><a href="Contacto.html">Contacto</a></button></div>
-        <div class="dropdown"> <button class="dropbtn"><a href="Cesta.html">Cesta</a></button></div>
-        <div class="dropdown"> <button class="dropbtn"><a href="AboutUs.html">About us</a></button> </div>
-        <div class="dropdown"> <button class="dropbtn"><a href="PreguntasRespuestas.html">Preguntas y
-                    Respuestas</a></button></div>
-        <!-- Conjunto de categorías que se mostrarán en el desplegable -->
-        <div class="dropdown"> <button onclick="myFunction()" class="dropbtn">Categorias</button>
-            <div id="myDropdown" class="dropdown-content"> <a href="#videojuegos">Videojuegos</a>
-                <a href="#merchandising">Merchandising</a> <a href="#perif%C3%A9ricos">Periféricos</a>
-                <a href="#accesorios">Accesorios</a>
+
+    <header>
+        <div class="box-header">
+            <div id="main-title">
+                <!-- Título de página + logo -->
+                <h1>Cesta</h1>
+            </div>
+            <div id="logo">
+                <a href="Principal.html"><img src="imagenes/logoDefinitivo.png" alt="Logo B3 Components"></a>
             </div>
         </div>
-    </div>
-    <br>
-    <h2>Mi compra</h2>
-    <!-- Tabla donde se verán los productos añadidos a la cesta  -->
-    <table>
-        <tbody>
-            <tr>
-                <td><strong>Producto</strong></td>
-                <td><strong>Precio</strong></td>
-                <td><strong>Cantidad</strong></td>
-                <td><strong>Total</strong></td>
-            </tr>
-            <tr>
-                <td>Playstation 5</td>
-                <td>499,99 $</td>
-                <td>1</td>
-                <td>499,99$</td>
-            </tr>
-        </tbody>
-    </table>
-    <div id="BloquePrincipal"> <br>
-        <!-- Botón para vaciar la cesta de productos -->
-        <button id="VaciarContinuar">Vaciar Cesta </button><br>
-        <!-- En este cuadro de texto veremos el resumen final de la compra con su respectivo IVA -->
-        <p> <textarea name="comentarios" rows="6" cols="35" readonly="readonly">
+    </header>
+
+    <main>
+        <!-- Botones de navegación -->
+        <div id="EstructuraBotones">
+            <div class="dropdown"> <button class="dropbtn"><a href="Principal.html">Inicio</a></button></div>
+            <div class="dropdown"> <button class="dropbtn"><a href="Contacto.html">Contacto</a></button></div>
+            <div class="dropdown"> <button class="dropbtn"><a href="Cesta.html">Cesta</a></button></div>
+            <div class="dropdown"> <button class="dropbtn"><a href="AboutUs.html">About us</a></button> </div>
+            <div class="dropdown"> <button class="dropbtn"><a href="PreguntasRespuestas.html">Preguntas y Respuestas</a></button></div>
+            <!-- Función JavaScript que mostrará un menú desplegable -->
+            <div class="dropdown"> <button onclick="myFunction()" class="dropbtn">Categorias</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#videojuegos">Videojuegos</a>
+                    <a href="#merchandising">Merchandising</a>
+                    <a href="#perifericos">Periféricos</a>
+                    <a href="#accesorios">Accesorios</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <h2>Mi compra</h2>
+        <!-- Tabla donde se verán los productos añadidos a la cesta  -->
+        <table>
+            <tbody>
+                <tr>
+                    <td><strong>Producto</strong></td>
+                    <td><strong>Precio</strong></td>
+                    <td><strong>Cantidad</strong></td>
+                    <td><strong>Total</strong></td>
+                </tr>
+                <tr>
+                    <td>Playstation 5</td>
+                    <td>499,99 $</td>
+                    <td>1</td>
+                    <td>499,99$</td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="BloquePrincipal"> <br>
+            <!-- Botón para vaciar la cesta de productos -->
+            <button id="VaciarContinuar">Vaciar Cesta </button><br>
+            <!-- En este cuadro de texto veremos el resumen final de la compra con su respectivo IVA -->
+            <p> <textarea name="comentarios" rows="6" cols="35" readonly="readonly">
         Subtotal
         Total sin IVA
         IVA
         Total con IVA</textarea> </p>
-        <!-- Botón para finalizar la compra --><button id="VaciarContinuar">Continuar
+            <!-- Botón para finalizar la compra --><button id="VaciarContinuar">Continuar
         </button><br>
-    </div>
-    <!-- Conjunto de logos de redes sociales que conducirá a nuestro perfil  -->
-    <div class="shared-panel" id="RedesSociales"> <span>Redes sociales</span><br>
-        <a target="_blank" class="shared fb" title="Facebook"></a>
-        <a target="_blank" class="shared tt" title="Twitter"></a>
-        <a target="_blank" class="shared gp" title="Google+"></a>
-        <a data-action="share/whatsapp/share" class="shared wa" title="WhatsApp"></a>
-        <a target="_blank" class="shared ce" id="sml" title="Email"></a>
-    </div>
-    <!-- Logo de la empresa  -->
-    <a href="Principal.html"><img id="logo" src="imagenes/logoDefinitivo.png" alt="" longdesc="logoDefinitivo.png"></a>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Conjunto de logos de redes sociales que conducirá a nuestro perfil -->
+        <div class="container-social-networks">
+            <div id="redes-sociales">
+                <p>¡Síguenos en nuestras redes sociales!</p>
+                <a target="_blank" class="shared fb" title="Facebook"></a>
+                <a target="_blank" class="shared tt" title="Twitter"></a>
+                <a target="_blank" class="shared gp" title="Google+"></a>
+                <a data-action="share/whatsapp/share" class="shared wa" title="WhatsApp"></a>
+                <a target="_blank" class="shared ce" id="sml" title="Email"></a>
+            </div>
+        </div>
+
+    </footer>
+
 </body>
 
 </html>
