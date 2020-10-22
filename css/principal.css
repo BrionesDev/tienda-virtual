@@ -50,7 +50,7 @@ body {
     margin: 5px 0;
     padding: 0;
     /* Recurso incluido en la descarga del ejemplo */
-    background: url("shared.png") no-repeat;
+    background: url("../imagenes/shared.png") no-repeat;
     float: left;
     margin-right: 5px;
     cursor: pointer;
@@ -147,10 +147,6 @@ body {
     display: inline;
 }
 
-.header {
-    text-align: center;
-}
-
 #img-new1 {
     text-align: center;
     display: block;
@@ -172,13 +168,6 @@ body {
     text-align: center;
     /*adding-block: ;*/
     /*ine-height: 10px;*/
-}
-
-#mainTitle {
-    font-size: 50px;
-    text-align: center;
-    color: darkorange;
-    font-family: 'Staatliches', cursive;
 }
 
 .news {
@@ -224,7 +213,7 @@ body {
 }
 
 .news>ul>li>.new {
-    width: 382px;
+    width: 395px;
     max-width: 100%;
     height: 100%;
     background-color: #fff;
@@ -257,7 +246,8 @@ body {
 
 .news>ul>li>.new>.new--content>.new--c--title>h5 {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: bold;
+    font-family: 'Staatliches', cursive;
 }
 
 .container-social-networks {
@@ -280,14 +270,13 @@ body {
     background-image: url('../imagenes/Noticia2.jpg');
 }
 
-hr {
-    color: red;
-    border: 5px;
+.news>ul>li:nth-child(3)>.new>.new--image {
+    background-image: url('../imagenes/Noticia3.jpg');
 }
 
-.box-header {
-    width: 1850px;
-    /* height: 250px; */
+hr {
+    color: red;
+    font-weight: bolder;
 }
 
 #main-title {
@@ -317,5 +306,12 @@ header {
     position: relative;
 }
 
+.news>ul>li>.new>.new--content>.new--c--description>p {
+    font-family: 'Staatliches', cursive;
+}
 
-/*.news>ul>li>.new>.new--content>.new--c--description>p {}*/
+
+/*.box-header {
+    width: 1850px;
+    height: 250px;
+}*/

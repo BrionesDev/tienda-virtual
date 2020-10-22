@@ -16,13 +16,6 @@ body {
     background-color: #d0fad2;
 }
 
-h1 {
-    font-size: 50px;
-    text-align: center;
-    color: darkorange;
-    font-family: 'Staatliches', cursive;
-}
-
 .container {
     width: 95%;
     max-width: 900px;
@@ -59,7 +52,7 @@ h1 {
     height: 30px;
     margin: 5px 5px 5px 0px;
     padding: 0px;
-    background: rgba(0, 0, 0, 0) url("shared.png") no-repeat scroll 0% 0%;
+    background: rgba(0, 0, 0, 0) url("../imagenes/shared.png") no-repeat scroll 0% 0%;
     float: left;
     cursor: pointer;
     border-radius: 50%;
@@ -149,7 +142,7 @@ h1 {
     font-weight: bold;
 }
 
-#BloquePrincipal {
+.BloquePrincipal {
     position: relative;
     text-align: center;
 }
@@ -167,11 +160,38 @@ h1 {
 
 #logo {
     position: absolute;
-    top: -20px;
-    right: 10px;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    width: 366px;
+    height: 78px;
+}
+
+#main-title {
+    font-size: 25px;
+    text-align: center;
+    color: darkorange;
+    font-family: 'Staatliches', cursive;
 }
 
 .container-social-networks {
     width: 100%;
     text-align: right;
 }
+
+header {
+    position: relative;
+}
+
+header>div>#logo>a {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+
+/*.box-header {
+    width: 1850px;
+    height: 250px;
+}*/

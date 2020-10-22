@@ -42,7 +42,7 @@ body {
     height: 30px;
     margin: 5px 0;
     padding: 0;
-    background: url("shared.png") no-repeat;
+    background: url("../imagenes/shared.png") no-repeat;
     float: left;
     margin-right: 5px;
     cursor: pointer;
@@ -126,6 +126,11 @@ body {
     display: block;
 }
 
+.container-social-networks {
+    width: 100%;
+    text-align: right;
+}
+
 h1 {
     font-size: 50px;
     text-align: center;
@@ -133,14 +138,11 @@ h1 {
     font-family: 'Staatliches', cursive;
 }
 
-p {
-    font-size: 130%;
-}
-
-#RedesSociales {
+#redes-sociales {
     position: absolute;
     bottom: 5px;
     right: 10px;
+    font-weight: bold;
 }
 
 #BloquePrincipal {
@@ -158,13 +160,40 @@ p {
     text-align: center;
 }
 
+#main-title {
+    font-size: 25px;
+    text-align: center;
+    color: darkorange;
+    font-family: 'Staatliches', cursive;
+}
+
 #logo {
     position: absolute;
-    top: -20px;
-    right: 10px;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    width: 366px;
+    height: 78px;
+}
+
+header>div>#logo>a {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 }
 
 input {
     width: 330px;
     height: 30px;
 }
+
+header {
+    position: relative;
+}
+
+
+/*.box-header {
+    width: 1850px;
+    height: 250px;
+}*/

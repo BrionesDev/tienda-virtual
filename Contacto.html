@@ -30,7 +30,7 @@
                 <h1>Contacto</h1>
             </div>
             <div id="logo">
-                <a href="Principal.html"><img id="logo" src="imagenes/logoDefinitivo.png" alt="" longdesc="logoDefinitivo.png"></a>
+                <a href="Principal.html"><img src="imagenes/logoDefinitivo.png" alt="" longdesc="logoDefinitivo.png"></a>
             </div>
         </div>
     </header>
@@ -38,34 +38,36 @@
     <main>
         <!-- Botones de navegación -->
         <div id="EstructuraBotones">
-            <div class="dropdown"> <button class="dropbtn"><a href="Principal.html">Inicio</a></button></div>
-            <div class="dropdown"> <button class="dropbtn"><a href="Contacto.html">Contacto</a></button></div>
-            <div class="dropdown"> <button class="dropbtn"><a href="Cesta.html">Cesta</a></button></div>
-            <div class="dropdown"> <button class="dropbtn"><a href="AboutUs.html">About us</a></button> </div>
-            <div class="dropdown"> <button class="dropbtn"><a href="PreguntasRespuestas.html">Preguntas y Respuestas</a></button></div>
-            <!-- Conjunto de categorías que se mostrarán en el desplegable -->
-            <div class="dropdown"> <button onclick="myFunction()" class="dropbtn">Categorias</button>
+            <div class="dropdown"><button class="dropbtn"><a href="Principal.html">Inicio</a></button></div>
+            <!-- Función JavaScript que mostrará un menú desplegable -->
+            <div class="dropdown"><button onclick="myFunction()" class="dropbtn">Categorías</button>
                 <div id="myDropdown" class="dropdown-content">
                     <a href="#videojuegos">Videojuegos</a>
-                    <a href="#merchandising">Merchandising</a>
                     <a href="#perifericos">Periféricos</a>
                     <a href="#accesorios">Accesorios</a>
+                    <a href="#merchandising">Merchandising</a>
                 </div>
             </div>
+            <div class="dropdown"><button class="dropbtn"><a href="Cesta.html">Cesta</a></button></div>
+            <div class="dropdown"><button class="dropbtn"><a href="Contacto.html">Contacto</a></button></div>
+            <div class="dropdown"><button class="dropbtn"><a href="AboutUs.html">About us</a></button> </div>
+            <div class="dropdown"><button class="dropbtn"><a href="PreguntasRespuestas.html">Preguntas y Respuestas</a></button></div>
         </div>
-        <div id="BloquePrincipal">
+        <div class="BloquePrincipal">
             <h2>Datos de Contacto</h2>
             <!-- Conjunto de campos a rellenar para completar para poder enviar el mensaje  -->
-            <p id="Nombre"><b>Nombre:</b> <input name="nombre" type="text"> </p>
-            <p><b>Email:</b> <input name="email" type="text"></p>
-            <p><b>Telefono:</b> <input name="telefono" type="text"> </p>
+            <p><b>Nombre:</b> <input name="name" type="text" placeholder="Miguel García"> </p>
+            <p><b>Email:</b> <input name="email" type="text" placeholder="mgarcia@example.com"></p>
+            <p><b>Telefono:</b> <input name="phone" type="text" placeholder="687654321"></p>
+            <!--<p><b><label for="products"> Su consulta está relacionada con: </label></b>
+                <input type="text" name="option1" id="products"></p>-->
             <div>
                 <!-- Cuadro de texto donde se escribe el mensaje a enviar-->
-                <p> <b>Mensaje:</b> </p>
-                <p> <textarea name="comentarios" rows="7" cols="40">Escriba aquí su mensaje</textarea></p>
+                <p><b>Mensaje:</b></p>
+                <p><textarea name="contact-message" rows="7" cols="40" placeholder="Escriba aquí su mensaje..."></textarea></p>
             </div>
             <!-- Botón para enviar el mensaje  -->
-            <button>Enviar Mensaje </button><br>
+            <button>Enviar Mensaje</button>
             <br>
         </div>
     </main>

@@ -38,7 +38,7 @@
     height: 30px;
     margin: 5px 0;
     padding: 0;
-    background: url("shared.png") no-repeat;
+    background: url("../imagenes/shared.png") no-repeat;
     float: left;
     margin-right: 5px;
     cursor: pointer;
@@ -122,14 +122,15 @@
     display: block;
 }
 
-#RedesSociales {
+#redes-sociales {
     position: absolute;
     bottom: 5px;
     right: 10px;
+    font-weight: bold;
 }
 
-h1 {
-    font-size: 50px;
+#main-title {
+    font-size: 25px;
     text-align: center;
     color: darkorange;
     font-family: 'Staatliches', cursive;
@@ -140,10 +141,6 @@ h2 {
     text-align: center;
     color: darkorange;
     font-family: 'Staatliches', cursive;
-}
-
-p {
-    font-size: 130%;
 }
 
 #BloquePrincipal {
@@ -159,8 +156,11 @@ p {
 
 #logo {
     position: absolute;
-    top: -20px;
-    right: 10px;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    width: 366px;
+    height: 78px;
 }
 
 #VaciarContinuar {
@@ -182,3 +182,25 @@ textarea {
 body {
     background-color: #d0fad2;
 }
+
+header>div>#logo>a {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+header {
+    position: relative;
+}
+
+.container-social-networks {
+    width: 100%;
+    text-align: right;
+}
+
+
+/*.box-header {
+    width: 1850px;
+    height: 250px;
+}+/

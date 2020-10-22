@@ -22,47 +22,64 @@
 </head>
 
 <body>
-    <h1>Preguntas y Respuestas</h1>
-    <div id="EstructuraBotones">
-        <!-- Conjunto de botones fijados en cada una de las páginas -->
-        <div class="dropdown"> <button class="dropbtn"><a href="Principal.html">Inicio</a></button></div>
-        <div class="dropdown"> <button class="dropbtn"><a href="Contacto.html">Contacto</a></button></div>
-        <div class="dropdown"> <button class="dropbtn"><a href="Cesta.html">Cesta</a></button></div>
-        <div class="dropdown"> <button class="dropbtn"><a href="AboutUs.html">About us</a></button> </div>
-        <div class="dropdown"> <button class="dropbtn"><a href="PreguntasRespuestas.html">Preguntas y
-                    Respuestas</a></button></div>
-        <!-- Conjunto de categorías que se mostrarán en el desplegable -->
-        <div class="dropdown"> <button onclick="myFunction()" class="dropbtn">Categorías</button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="#videojuegos">Videojuegos</a>
-                <a href="#merchandising">Merchandising</a>
-                <a href="#perif%C3%A9ricos">Periféricos</a>
-                <a href="#accesorios">Accesorios</a>
+
+    <header>
+        <div class="box-header">
+            <div id="main-title">
+                <!-- Título de página + logo -->
+                <h1>Preguntas y Respuestas</h1>
+            </div>
+            <div id="logo">
+                <a href="Principal.html"><img src="imagenes/logoDefinitivo.png" alt="Logo B3 Components"></a>
             </div>
         </div>
-    </div>
-    <div id="BloquePrincipal">
-        <!-- Cuadro de texto para introducir la pregunta -->
-        <p><b>Pregunta:</b><input name="nombre" type="text"><br></p>
-        <!-- Botón para publicar la pregunta --><button>Publicar </button><br>
-        <div id="Respuestas">
-            <h3> Respuestas </h3>
-            <!-- Conjunto de preguntas y respuestas que los usuarios han introducido con el tiempo  -->
-            <p> <textarea name="comentarios" rows="20" cols="85" readonly="readonly"> Respuestas...     
-        </textarea></p>
+    </header>
+
+    <main>
+        <!-- Botones de navegación -->
+        <div id="EstructuraBotones">
+            <div class="dropdown"><button class="dropbtn"><a href="Principal.html">Inicio</a></button></div>
+            <!-- Función JavaScript que mostrará un menú desplegable -->
+            <div class="dropdown"><button onclick="myFunction()" class="dropbtn">Categorías</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#videojuegos">Videojuegos</a>
+                    <a href="#perifericos">Periféricos</a>
+                    <a href="#accesorios">Accesorios</a>
+                    <a href="#merchandising">Merchandising</a>
+                </div>
+            </div>
+            <div class="dropdown"><button class="dropbtn"><a href="Cesta.html">Cesta</a></button></div>
+            <div class="dropdown"><button class="dropbtn"><a href="Contacto.html">Contacto</a></button></div>
+            <div class="dropdown"><button class="dropbtn"><a href="AboutUs.html">About us</a></button> </div>
+            <div class="dropdown"><button class="dropbtn"><a href="PreguntasRespuestas.html">Preguntas y Respuestas</a></button></div>
         </div>
-    </div>
-    <br>
-    <!-- Conjunto de logos de redes sociales que conducirá a nuestro perfil  -->
-    <div class="shared-panel" id="RedesSociales"> <span>Redes sociales</span><br>
-        <a target="_blank" class="shared fb" title="Facebook"></a>
-        <a target="_blank" class="shared tt" title="Twitter"></a>
-        <a target="_blank" class="shared gp" title="Google+"></a>
-        <a data-action="share/whatsapp/share" class="shared wa" title="WhatsApp"></a>
-        <a target="_blank" class="shared ce" id="sml" title="Email"></a>
-    </div>
-    <!-- Logo de la empresa  -->
-    <a href="Principal.html"><img id="logo" src="imagenes/logoDefinitivo.png" alt="" longdesc="logoDefinitivo.png"></a>
+        <div id="BloquePrincipal">
+            <!-- Cuadro de texto para introducir la pregunta -->
+            <p><b>Pregunta:</b><input name="question" type="text" placeholder="Escriba su pregunta..." alert-light><br></p>
+            <!-- Botón para publicar la pregunta --><button>Publicar </button><br>
+            <div id="Respuestas">
+                <h3> Respuestas </h3>
+                <!-- Conjunto de preguntas y respuestas que los usuarios han introducido con el tiempo  -->
+                <p> <textarea name="answers" rows="20" cols="85" readonly="readonly"> Respuestas...     
+        </textarea></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Conjunto de logos de redes sociales que conducirá a nuestro perfil  -->
+        <div class="container-social-networks">
+            <div id="redes-sociales">
+                <p>¡Síguenos en nuestras redes sociales!</p>
+                <a target="_blank" class="shared fb" title="Facebook"></a>
+                <a target="_blank" class="shared tt" title="Twitter"></a>
+                <a target="_blank" class="shared gp" title="Google+"></a>
+                <a data-action="share/whatsapp/share" class="shared wa" title="WhatsApp"></a>
+                <a target="_blank" class="shared ce" id="sml" title="Email"></a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>

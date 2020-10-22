@@ -29,7 +29,7 @@
 .shared-panel span {
     margin: 10px 0px;
     font-size: 16px;
-    font-weight: 600;p
+    font-weight: 600;
 }
 
 .shared {
@@ -38,7 +38,7 @@
     height: 30px;
     margin: 5px 5px 5px 0px;
     padding: 0px;
-    background: rgba(0, 0, 0, 0) url("shared.png") no-repeat scroll 0% 0%;
+    background: rgba(0, 0, 0, 0) url("../imagenes/shared.png") no-repeat scroll 0% 0%;
     float: left;
     cursor: pointer;
     border-radius: 50%;
@@ -125,14 +125,20 @@
     display: block;
 }
 
+.container-social-networks {
+    width: 100%;
+    text-align: right;
+}
+
 #Campos {
     color: black;
 }
 
-#RedesSociales {
+#redes-sociales {
     position: absolute;
     bottom: 5px;
     right: 10px;
+    font-weight: bold;
 }
 
 #BloquePrincipal {
@@ -157,8 +163,18 @@
 
 #logo {
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    width: 366px;
+    height: 78px;
+}
+
+header>div>#logo>a {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 }
 
 input {
@@ -170,13 +186,19 @@ body {
     background-color: #d0fad2;
 }
 
-h1 {
-    font-size: 50px;
+#main-title {
+    font-size: 25px;
     text-align: center;
     color: darkorange;
     font-family: 'Staatliches', cursive;
 }
 
-p {
-    font-size: 130%;
+header {
+    position: relative;
 }
+
+
+/*.box-header {
+    width: 1850px;
+    height: 250px;
+}+/
