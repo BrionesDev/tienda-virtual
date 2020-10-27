@@ -1,0 +1,62 @@
+div {
+    width: 275px;
+    height: 125px;
+}
+
+h1 {
+    /* Establecemos una anchura para que el background del título encaje. */
+    background-color: gold;
+    width: 275px;
+}
+
+#primer-div {
+    background-color: hotpink;
+    border-width: 7px;
+    border-color: aqua;
+    border-style: ridge;
+    box-sizing: border-box;
+    /* Con esta propiedad redimensionamos el contenedor de
+    forma que siempre quedará con la anchura y altura ajustada a lo establecido. */
+}
+
+#segundo-div {
+    background-color: yellowgreen;
+    border-width: 7px;
+    border-color: blueviolet;
+    border-style: solid;
+    box-sizing: border-box;
+    border-radius: 10px;
+    /* Redondear esquinas de un borde. */
+}
+
+#display-normal-title {
+    width: 320px;
+    /* display: inline-block; */
+}
+
+#display-normal-title>h1 {
+    background-color: lightskyblue;
+    border: 5px darkred solid;
+}
+
+#display-normal-title>h2 {
+    background-color: darkorange;
+    border-color: forestgreen;
+    border-style: groove;
+    border-width: 5px;
+}
+
+#display-span {
+    width: 320px;
+    /* display: inline-block; */
+}
+
+#display-span span:nth-child(1) {
+    background-color: darkgrey;
+    border: 5px inset olive;
+}
+
+#display-span span:nth-child(2) {
+    background-color: lightgreen;
+    border: 5px outset indigo;
+}

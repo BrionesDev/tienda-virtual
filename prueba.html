@@ -4,16 +4,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pruebas</title>
 </head>
 
 <body>
-
     <!-- Podemos usar el buscador de Google, Youtube... de la siguiente forma -->
-    <form action="https://www.google.com/search">
-        <input type="text" name="q">
-        <button>Búsqueda Google</button>
-    </form>
+    <div>
+        <h2>Búsqueda por Google</h2>
+        <form action="https://www.google.com/search">
+            <input type="text" name="q">
+            <button>Buscar</button>
+        </form>
+    </div>
+    <div>
+        <!-- Marcar opciones mediante casillas -->
+        <h2>Marcar opciones en casillas</h2>
+        <div>
+            <input type="checkbox" id="option1" name="cocacola">
+            <label for="option1"> Coca Cola</label>
+        </div>
+        <div>
+            <input type="checkbox" id="option2" name="pepsi">
+            <label for="option2">Pepsi</label>
+        </div>
+    </div>
+    <div>
+        <!-- Lista de opciones y marcar 1 de ellas -->
+        <h2>Marcar 1 sola opción dentro de una lista de opciones</h2>
+        <p>¿Qué plataforma desea realizar su búsqueda?</p>
+        <label for="PS4">PS4</label>
+        <input type="radio" id="PS4" name="platform" value="PlayStation4">
+        <label for="xbox">Xbox One</label>
+        <input type="radio" id="xbox" name="platform" value="Xbox One">
+        <label for="nintendo">Nintendo Switch</label>
+        <input type="radio" id="nintendo" name="platform" value="NintendoSwitch">
+    </div>
+    <div>
+        <!-- Etiqueta SELECT. Crea una lista desplegable con diferentes opciones para escoger -->
+        <h2>Seleccione un método de pago</h2>
+        <select name="payment-methods" id="payment-select">
+            <option value="credit-card">Tarjeta de crédito</option>
+            <option value="paypal">Paypal</option>
+            <option value="Gift Card">Tarjeta regalo</option>
+        </select>
+    </div>
+    <div>
+        <!-- Esto es otra lista SELECT dentro de un FORM con LABEL y BUTTON -->
+        <form action="lista-generos">
+            <p>
+                <label for="genres-list"><b>¿Cuál es su género?</b></label>
+                <select name="genres" id="genres-list">
+                    <option value="man">Onvre</option>
+                    <!-- Con atributo "selected" preseleccionamos una opción por defecto -->
+                    <option value="woman" selected>Muger</option>
+                    <option value="inclusive">Elle</option>
+                    <option value="non-binary">No binarie</option>
+                    <option value="ally">Aliade</option>
+                    <option value="catalufo">Catalufo</option>
+                </select>
+            </p>
+            <button>Continuar</button>
+        </form>
+    </div>
+    <div>
+        <!-- INPUT tipo rango -->
+        <form action="price-range">
+            <p>
+                <label for="price-range"><b>Selecciona un precio estimado deseado</b></label>
+                <!-- Atributos "min" y "max" para establecer el rango y "step" un intervalo de cantidad-->
+                <!-- Estos atributos min, max y step tmb se pueden usar en INPUT type="number"-->
+                <input type="range" id="price-range" value="10" min="5" max="50" name="price" step="5">
+            </p>
+            <button>Consultar</button>
+        </form>
+    </div>
+    <div>
+        <!-- Etiqueta TEXTAREA -->
+        <label for="description"><b>Ejemplo de TEXTAREA</b></label>
+        <p>
+            <textarea name="contact-description" id="description" cols="25" rows="8" placeholder="Describa su consulta..."></textarea>
+        </p>
+    </div>
+    <div>
+        <!-- Validar introducción de datos -->
+        <form action="/validation">
+            <p>
+                <h2>Ejemplo de validación de datos</h2>
+                <label for="validate-text"><b>Nombre de usuario: </b></label>
+                <input type="text" id="validate-text" name="username-validation" placeholder="Pan" minlength="4" required>
+                <p>
+                    <label for="validate-pass"><b>Contraseña: </b></label>
+                    <input type="password" id="validate-pass" name="pass-validation" placeholder="Pepe" minlength="6" maxlength="15" required>
+                </p>
+                <button>Enviar</button>
+            </p>
+        </form>
+        <div>
+            <form action="/form-race-registraion">
+                <h2><b>Ejercicio Race Registration </b></h2>
+                <p>
+                    <label for="first-name">First name</label>
+                    <input type="text" id="first-name" name="firstname" placeholder="First name..." maxlength="15" required>
+                    <label for="last-name">Last name</label>
+                    <input type="text" id="last-name" name="lastname" placeholder="Last name..." maxlength="15" required>
+                </p>
+                <p>
+                    <p>Select a Race:</p>
+                    <label for="type-race1">Fun Run 5k</label>
+                    <input type="radio" id="type-race1" name="race-option">
+                    <label for="type-race2">Half Marathon</label>
+                    <input type="radio" id="type-race2" name="race-option">
+                    <label for="type-race3">Full Marathon</label>
+                    <input type="radio" id="type-race3" name="race-option">
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="text" id="first-name" name="mail" placeholder="Set your email" maxlength="15" required>
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" name="password" placeholder="Set your pasword..." maxlength="15" required>
+                </p>
+                <p>
+                    <label for="age-list">Select Age Group:</label>
+                    <select name="ages" id="age-list">
+                            <option value="select-option">--- Select an option ---</option>
+                            <option value="older50">Experts: +3 years experience</option>
+                            <option value="adult21">Intermediate: 1 year experience</option>
+                            <option value="under18">Beginners: No experience</option>
+                            <option value="under18">New member!</option>
+                        </select>
+                </p>
+                <button>Enviar</button>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
