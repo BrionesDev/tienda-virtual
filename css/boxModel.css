@@ -1,6 +1,6 @@
 div {
-    width: 275px;
-    height: 125px;
+    width: 400px;
+    height: 130px;
 }
 
 h1 {
@@ -48,7 +48,6 @@ h1 {
 
 #display-span {
     width: 320px;
-    /* display: inline-block; */
 }
 
 #display-span span:nth-child(1) {
@@ -58,5 +57,97 @@ h1 {
 
 #display-span span:nth-child(2) {
     background-color: lightgreen;
-    border: 5px outset indigo;
+    border: 5px outset aqua;
+}
+
+.position {
+    width: 100%;
+    display: block;
+    margin-bottom: 150px;
+}
+
+.position-static {
+    width: 225px;
+    height: 125px;
+    background-color: red;
+    margin: 10px;
+    display: inline-block;
+    border: 5px black solid;
+    border-radius: 5px;
+    position: static;
+    top: 100px;
+}
+
+
+/* Versión 2 de :nth-last-of-type() */
+
+div.position-static:nth-last-of-type(2) {
+    background-color: darkred;
+}
+
+
+/* :nth-child() coge todas las tags que sean hijas del padre. */
+
+
+/* div.position-static:nth-child(3) {
+    background-color: darkred;
+} */
+
+
+/* :nth-of-type() coge todas las tags que sean del mismo tipo.*/
+
+
+/* div.position>div.position-static:nth-of-type(2) {
+    background-color: darkred;
+}
+ */
+
+.position-relative {
+    width: 225px;
+    height: 125px;
+    background-color: red;
+    margin: 10px;
+    display: inline-block;
+    border: 5px black solid;
+    border-radius: 5px;
+}
+
+.position-relative:nth-last-child(2) {
+    background-color: darkred;
+    position: relative;
+    top: 30px;
+}
+
+.position-absolute {
+    width: 225px;
+    height: 125px;
+    background-color: red;
+    margin: 10px;
+    display: inline-block;
+    border: 5px black solid;
+    border-radius: 5px;
+}
+
+.position>.position-absolute:nth-last-of-type(2) {
+    background-color: darkred;
+    position: absolute;
+    bottom: -500px;
+    left: 100px;
+}
+
+.position-fixed {
+    width: 225px;
+    height: 125px;
+    background-color: red;
+    margin: 10px;
+    display: inline-block;
+    border: 5px black solid;
+    border-radius: 5px;
+}
+
+.position-fixed:nth-of-type(2) {
+    background-color: darkred;
+    position: fixed;
+    bottom: 0;
+    right: 30px;
 }
