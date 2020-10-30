@@ -1,0 +1,53 @@
+h1 {
+    text-align: center;
+    color: darkorange;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#container {
+    background-color: #1bc0f7;
+    width: 70%;
+    height: 1200px;
+    margin: 0 auto;
+    border: 5px black solid;
+    /* Definimos caja contenedora tipo FLEX mediante la propiedad DISPLAY */
+    display: flex;
+    /* Propiedad FLEX-DIRECTION definimos la dirección de los items de dentro del container como si fuera un eje*/
+    /* ROW es la opción Default de FLEX DIRECTION */
+    /* Versión invertida */
+    /* flex-direction: row-reverse; */
+    /* Lo mismo que hay en ROW puede haber en COLUMN/COLUMN-REVERSE */
+    flex-direction: column;
+    /* JUSTIFY-CONTENT alinea el contenido de la FLEX BOX por su eje principal */
+    /* Propiedadees: FLEX-START, FLEX-END, FLEX-CENTER, SPACE-BETWEEN, SPACE-AROUND y SPACE EVENLY*/
+    /* SPACE-BETWEEN posiciona los items de forma igual sin dejar espacio en los bordes X,Y */
+    /* SPACE-AROUND posiciona los items igual dejando la mitad de espacio en borde X.*/
+    /* SPACE-EVENLY posiciona items igual dejando el mismo espacio entre items y en los bordes X */
+    justify-content: space-evenly;
+}
+
+section div {
+    width: 200px;
+    height: 200px;
+}
+
+#square1 {
+    background-color: #ffe3c4;
+}
+
+#square2 {
+    background-color: #ffd3a3;
+}
+
+#square3 {
+    background-color: #ffbc73;
+}
+
+#square4 {
+    background-color: #ffa645;
+}
+
+#square5 {
+    background-color: #ff8e12;
+}

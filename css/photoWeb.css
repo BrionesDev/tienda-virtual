@@ -1,0 +1,10 @@
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+img {
+    width: 30%;
+    /* 90% */
+    margin: calc(10%/6.5);
+}
