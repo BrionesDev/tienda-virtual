@@ -6,13 +6,6 @@ body {
     background-color: #d0fad2;
 }
 
-.container {
-    width: 95%;
-    max-width: 900px;
-    padding: 32px 64px;
-    margin: auto;
-}
-
 .social {
     /* las imágenes usadas tienen width de 48px */
     width: 48px;
@@ -171,7 +164,7 @@ body {
 }
 
 .news {
-    width: 100%;
+    width: 60%;
     max-width: 1140px;
     margin: 0 auto;
     display: block;
@@ -198,24 +191,31 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: stretch;
+    border: solid black 5px;
+    max-width: 1220px;
+    width: 1220px;
+    padding-left: 0;
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 .news>ul>li {
     width: auto;
     max-width: 100%;
-    margin-bottom: 8px;
-    white-space: normal;
+    /* margin-bottom: 8px; */
+    /* white-space: normal; */
     display: inline-block;
+    /* border: solid black 5px; */
 }
 
 .news>ul>li:not(:last-of-type) {
-    margin-right: 8px;
+    border-right: solid black 5px;
 }
 
 .news>ul>li>.new {
-    width: 395px;
+    width: 400px;
     max-width: 100%;
-    height: 100%;
+    height: 464px;
     background-color: #fff;
     overflow: hidden;
     display: block;
@@ -226,6 +226,7 @@ body {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
+    
 }
 
 .news>ul>li>.new>.new--image::before {
@@ -260,6 +261,7 @@ body {
     bottom: 5px;
     right: 10px;
     font-weight: bold;
+    color: #DDD;
 }
 
 .news>ul>li:nth-child(1)>.new>.new--image {
@@ -272,6 +274,24 @@ body {
 
 .news>ul>li:nth-child(3)>.new>.new--image {
     background-image: url('../imagenes/Noticia3.jpg');
+}
+
+.news>ul>li:nth-child(4)>.new>.new--image {
+    background-image: url('../imagenes/sample1.jpg');
+}
+
+.news>ul>li:nth-child(5)>.new>.new--image {
+    background-image: url('../imagenes/sample2.jpg');
+}
+
+.news>ul>li:nth-child(6)>.new>.new--image {
+    background-image: url('../imagenes/sample3.jpg');
+}
+.news>ul>li:nth-child(7)>.new>.new--image {
+    background-image: url('../imagenes/sample4.jpg');
+}
+.news>ul>li:nth-child(8)>.new>.new--image {
+    background-image: url('../imagenes/sample5.jpg');
 }
 
 hr {
@@ -289,7 +309,7 @@ hr {
 #logo {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     overflow: hidden;
     width: 366px;
     height: 78px;
@@ -310,8 +330,221 @@ header {
     font-family: 'Staatliches', cursive;
 }
 
+.dummy_page {
+    height: 10px;
+    width: 100%;
+    background-color: #d0fad2;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px 0px;
+  }
+  /* STYLES SPECIFIC TO FOOTER  */
+  .footer {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: #070617;
+   
 
-/*.box-header {
-    width: 1850px;
-    height: 250px;
-}*/
+  }
+  .footer .col {
+    width: 190px;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+  }
+  .footer .col h1 {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 20px 0px 5px 0px;
+    color: rgba(255,255,255,0.2);
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.250em;
+  }
+  .footer .col ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .footer .col ul li {
+    color: #999999;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+  }
+  .social ul li {
+    display: inline-block;
+    padding-right: 5px !important;
+  }
+  
+  .footer .col ul li:hover {
+    color: green;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+  }
+  .clearfix {
+    clear: both;
+  }
+  @media only screen and (min-width: 1280px) {
+    .contain {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (max-width: 1139px) {
+    .contain .social {
+      width: 1000px;
+      display: block;
+    }
+    .social h1 {
+      margin: 0px;
+    }
+  }
+  @media only screen and (max-width: 950px) {
+    .footer .col {
+      width: 33%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+      .footer .col {
+        width: 50%;
+      }
+      .footer .col h1 {
+        font-size: 14px;
+      }
+      .footer .col ul li {
+        font-size: 13px;
+      }
+  }
+  @media only screen and (max-width: 340px) {
+    .footer .col {
+      width: 100%;
+    }
+  }
+
+
+
+/*-----------------------------------------------*/
+/* Botón de ir hacía arriba*/
+
+  #button {
+    display: inline-block;
+    background-color: darkorange;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 3px;
+    transition: background-color .3s;
+    z-index: 1000;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+
+
+  /*-----------------------------------------------*/
+ /* Caja donde se mostrará el user, logout etc */
+
+  #login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    width: 290px;
+    height: 150px;
+    background-color:transparent;
+    border: black 2.5px solid;
+    
+    
+    
+}
+
+#login p {
+    font-family: 'Staatliches', cursive;
+    
+}
+
+
+/*-----------------------------------------------*/
+/*botones login*/
+.square_btn {
+ 
+    text-decoration: none;
+    color: darkorange;
+    border: solid 2px darkorange;
+    border-radius: 8px;
+    margin-left: 10%;
+    margin-right: 5%;
+    background-color: darkorange;
+    color: white;
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.square_btn:hover {
+    background: tomato;
+    color: black
+}
+
+
+/*-----------------------------------------------*/
+/*dirección*/
+#direccion {
+    background: #070617;
+    color: white;
+    text-align: center;
+    margin:auto;
+}
+
+
+
+/*-----------------------------------------------*/
+
+.square_login {
+    margin-left: 3%;
+
+}
+
+.square_registrar {
+    margin-left: 5%;
+    margin-bottom: 5%;
+
+}

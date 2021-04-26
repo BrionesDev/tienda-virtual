@@ -8,7 +8,7 @@ h1 {
 #container {
     background-color: #1bc0f7;
     width: 70%;
-    height: 1200px;
+    height: 800px;
     margin: 0 auto;
     border: 5px black solid;
     /* Definimos caja contenedora tipo FLEX mediante la propiedad DISPLAY */
@@ -24,12 +24,13 @@ h1 {
     /* SPACE-BETWEEN posiciona los items de forma igual sin dejar espacio en los bordes X,Y */
     /* SPACE-AROUND posiciona los items igual dejando la mitad de espacio en borde X.*/
     /* SPACE-EVENLY posiciona items igual dejando el mismo espacio entre items y en los bordes X */
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
 }
 
 section div {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 250px;
 }
 
 #square1 {

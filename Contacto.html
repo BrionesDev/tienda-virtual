@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- CSS de esta página -->
     <link rel="stylesheet" href="css/Contacto.css">
+    <script src=”https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js”></script>
 
     <!-- <link rel="stylesheet" href="css/reset.css"> Este RESET se usará para quitar los valores por defecto -->
     <!--<link rel="stylesheet" href="css/bootstrap.min.css" BootStrap-->
@@ -32,6 +34,12 @@
             <div id="logo">
                 <a href="Principal.html"><img src="imagenes/logoDefinitivo.png" alt="" longdesc="logoDefinitivo.png"></a>
             </div>
+            <div id="login">
+              <p>Username: <input type="text" class="square_login"></p>
+              <p>Password: <input type="password" class="square_registrar"></p>
+              <a href="#" class="square_btn">Login</a>
+              <a href="#" class="square_btn">Registrarse</a>
+            </div>
         </div>
     </header>
 
@@ -53,38 +61,135 @@
             <div class="dropdown"><button class="dropbtn"><a href="AboutUs.html">About us</a></button> </div>
             <div class="dropdown"><button class="dropbtn"><a href="PreguntasRespuestas.html">Preguntas y Respuestas</a></button></div>
         </div>
-        <div class="BloquePrincipal">
-            <h2>Datos de Contacto</h2>
-            <!-- Conjunto de campos a rellenar para completar para poder enviar el mensaje  -->
-            <p><b>Nombre:</b> <input name="name" type="text" placeholder="Miguel García"> </p>
-            <p><b>Email:</b> <input name="email" type="text" placeholder="mgarcia@example.com"></p>
-            <p><b>Telefono:</b> <input name="phone" type="text" placeholder="687654321"></p>
-            <!--<p><b><label for="products"> Su consulta está relacionada con: </label></b>
-                <input type="text" name="option1" id="products"></p>-->
-            <div>
-                <!-- Cuadro de texto donde se escribe el mensaje a enviar-->
-                <p><b>Mensaje:</b></p>
-                <p><textarea name="contact-message" rows="7" cols="40" placeholder="Escriba aquí su mensaje..."></textarea></p>
-            </div>
-            <!-- Botón para enviar el mensaje  -->
-            <button>Enviar Mensaje</button>
-            <br>
-        </div>
+        <div class="container">  
+            <form id="contact" action="" method="post">
+              <h3>Contact Form</h3>
+             
+              <fieldset>
+                <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+              </fieldset>
+              <fieldset>
+                <input placeholder="Your Email Address" type="email" tabindex="2" required>
+              </fieldset>
+              <fieldset>
+                <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3">
+              </fieldset>
+              <fieldset>
+                <input placeholder="Your Web Site (optional)" type="url" tabindex="4">
+              </fieldset>
+              <fieldset>
+                <textarea placeholder="Type your message here...." tabindex="5"></textarea>
+              </fieldset>
+              <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+              </fieldset>
+              
+            </form>
+          </div>
     </main>
 
-    <footer>
-        <!-- Conjunto de logos de redes sociales que conducirá a nuestro perfil  -->
-        <div class="container-social-networks">
-            <div id="redes-sociales">
-                <p>¡Síguenos en nuestras redes sociales!</p>
-                <a target="_blank" class="shared fb" title="Facebook"></a>
-                <a target="_blank" class="shared tt" title="Twitter"></a>
-                <a target="_blank" class="shared gp" title="Google+"></a>
-                <a data-action="share/whatsapp/share" class="shared wa" title="WhatsApp"></a>
-                <a target="_blank" class="shared ce" id="sml" title="Email"></a>
-            </div>
+    
+  <footer>
+
+    <div class="dummy_page">
+    </div>
+
+    <div class="footer">
+      <div class="contain">
+        <div class="col">
+          <h1>Company</h1>
+          <ul>
+            <li>About</li>
+            <li>Mission</li>
+            <li>Services</li>
+            <li>Social</li>
+            <li>Get in touch</li>
+          </ul>
         </div>
-    </footer>
+        <div class="col">
+          <h1>Products</h1>
+          <ul>
+            <li>About</li>
+            <li>Mission</li>
+            <li>Services</li>
+            <li>Social</li>
+            <li>Get in touch</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h1>Accounts</h1>
+          <ul>
+            <li>About</li>
+            <li>Mission</li>
+            <li>Services</li>
+            <li>Social</li>
+            <li>Get in touch</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h1>Resources</h1>
+          <ul>
+            <li>Webmail</li>
+            <li>Redeem code</li>
+            <li>WHOIS lookup</li>
+            <li>Site map</li>
+            <li>Web templates</li>
+            <li>Email templates</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h1>Support</h1>
+          <ul>
+            <li>Contact us</li>
+            <li>Web chat</li>
+            <li>Open ticket</li>
+          </ul>
+        </div>
+
+        <div class="clearfix"></div>
+      </div>
+      <div class="container-social-networks">
+        <div id="redes-sociales">
+          <p>¡Síguenos en nuestras redes sociales!</p>
+          <a target="_blank" class="shared fb" title="Facebook"></a>
+          <a target="_blank" class="shared tt" title="Twitter"></a>
+          <a target="_blank" class="shared gp" title="Google+"></a>
+          <a data-action="share/whatsapp/share" class="shared wa" title="WhatsApp"></a>
+          <a target="_blank" class="shared ce" id="sml" title="Email"></a>
+        </div>
+      </div>
+    
+
+
+
+
+
+      <!-- Boton ir arriba -->
+      <a id="button"></a>
+      <script>
+
+        jQuery(document).ready(function () {
+
+          var btn = $('#button');
+
+          $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+              btn.addClass('show');
+            } else {
+              btn.removeClass('show');
+            }
+          });
+
+          btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '300');
+          });
+
+        });
+
+      </script>
+  </footer>
+  <p id="direccion">Carrer de Cartellà, 48, 08031 Barcelona</p>
 </body>
 
 </html>
