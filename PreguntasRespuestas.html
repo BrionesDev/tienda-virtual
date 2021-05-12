@@ -7,8 +7,10 @@
     <meta name="HandheldFriendly" content="true">
     <!-- CSS de esta página -->
     <link rel="stylesheet" href="css/PreguntasRespuestas.css">
-    <!-- jquery -->
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Button Top-Up -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <!-- <link rel="stylesheet" href="css/reset.css"> Este RESET se usará para quitar los valores por defecto -->
 
@@ -58,25 +60,101 @@
 
     <!-- Main -->
     <main>
+        <!-- Left section -->
         <div id="left-section">
-            <div id="box-left-qa">
                 <div id="box-title-freq-qa">
-                    <span class="">PREGUNTAS Y RESPUESTAS FRECUENTES</span>
+                    <span id="title-freq-qa">PREGUNTAS Y RESPUESTAS FRECUENTES</span>
                 </div>
                 <div id="box-freq-qa">
+                    <!-- Container question -->
+                    <div class="question-list">
+                        <div id="question-box">
+                            <div class="image-box">
 
+                            </div>
+                            <div class="question">
+                                
+                            </div>
+                        </div>
+                        <div id="box-views-and-votes">
+                            <div id="box-views">
+
+                            </div>
+                            <div id="box-votes">
+
+                            </div>
+                        </div>
+                        <!-- Container comentarios -->
+                        <div id="box-comments">
+                            <p id="comments">
+                                + Ver más comentarios...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="question-list">
+                        <div id="question-box">
+                            <div class="image-box">
+
+                            </div>
+                            <div class="question">
+                                
+                            </div>
+                        </div>
+                        <div id="box-views-and-votes">
+                            <div id="box-views">
+
+                            </div>
+                            <div id="box-votes">
+
+                            </div>
+                        </div>
+                        <div id="box-comments">
+                            <p id="comments">
+                                + Ver más comentarios...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="question-list">
+                        <div id="question-box">
+                            <div class="image-box">
+
+                            </div>
+                            <div class="question">
+                                
+                            </div>
+                        </div>
+                        <div id="box-views-and-votes">
+                            <div id="box-views">
+
+                            </div>
+                            <div id="box-votes">
+
+                            </div>
+                        </div>
+                        <div id="box-comments">
+                            <p id="comments">
+                                + Ver más comentarios...
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
         </div>
+        <!-- Right section -->
         <div id="right-section">
             <div id="box-right-qa">
                 <div id="box-title-qa">
-                    <p id="title-qa">PREGUNTAS RELACIONADAS</p>
+                    <span id="title-qa">PREGUNTAS RELACIONADAS</span>
                 </div>
 
                 <div id="box-related-qa">
-                    <div id="list-questions">
-                        <span class="question">HOLA SOY UN EJEMPLO PREGUNTA!</span>
+                    <div class="list-questions">
+                        <span class="question-qa">HOLA SOY UN EJEMPLO PREGUNTA!</span>
+                    </div>
+                    <div class="list-questions">
+                        <span class="question-qa">HOLA SOY UN EJEMPLO PREGUNTA!</span>
+                    </div>
+                    <div class="list-questions">
+                        <span class="question-qa">HOLA SOY UN EJEMPLO PREGUNTA!</span>
                     </div>
                 </div>
             </div>
@@ -151,12 +229,13 @@
                 <a data-action="share/whatsapp/share" class="shared wa" title="WhatsApp"></a>
                 <a target="_blank" class="shared ce" id="sml" title="Email"></a>
             </div>
+            
             <!-- Boton ir arriba -->
             <a id="button"></a>
             <script>
 
                 jQuery(document).ready(function () {
-
+                    
                     var btn = $('#button');
 
                     $(window).scroll(function () {
@@ -177,7 +256,6 @@
             </script>
     </footer>
     <p id="direccion">Carrer de Cartellà, 48, 08031 Barcelona</p>
-
     <!-- Script menú de navegación -->
     <script src="js/Categorias.js"></script>
 </body>

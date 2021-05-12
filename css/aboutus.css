@@ -122,6 +122,10 @@ h1 {
   display: block;
 }
 
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
 /* --- Container .dropdown | Styles Navbar buttons ---*/
 .dropbtn {
   background-color: #ff8300;
