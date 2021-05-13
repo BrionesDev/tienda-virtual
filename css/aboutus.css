@@ -1,148 +1,141 @@
 /* ALL ELEMENTS */
 /* Transparencia en bordes */
 * {
-  box-sizing: border-box;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
 }
-
 /* BODY */
-/* --- BODY | BACKGROUND COLOR --- */
+/* --- BODY | BACKGROUND COLOR ---*/
 body {
-  background-color: #d0fad2;
+background-color: #55D2F7;
 }
-
 /* HEADER */
-
-/* --- HEADER | Define position of Header --- */
+/* --- HEADER | Define position of Header ---*/
 header {
-  position: relative;
+position: relative;
 }
-
 /* --- Container of Header */
-.box-header {
-  width: 100%;
-  height: 250px;
+/*.box-header {
+width: 1850px;
+height: 250px;
+}*/
+/* --- Logo-link --- */
+header>div>#logo>a {
+position: absolute;
+top: 50%;
+left: 0;
+transform: translateY(-50%);
 }
-
-/* --- Link Logo --- */
-header > div > #logo > a {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-}
-
 /* --- Logo --- */
 #logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  width: 366px;
-  height: 78px;
+position: absolute;
+top: 0;
+left: 0;
+overflow: hidden;
+width: 366px;
+height: 78px;
 }
-
 /* --- Title of this page --- */
 #main-title {
-  font-size: 25px;
-  text-align: center;
-  color: darkorange;
-  font-family: "Staatliches", cursive;
+font-size: 25px;
+text-align: center;
+color: darkorange;
+font-family: 'Staatliches', cursive;
 }
-
 /* --- H1 | Main Title --- */
-h1 {
+#main-title h1 {
   font-size: 50px;
   text-align: center;
   color: darkorange;
   font-family: "Staatliches", cursive;
 }
-
 /* --- Box Login-Register-Logout --- */
 #login {
-  position: absolute;
-  top: 0;
-  right: 0;
-  overflow: hidden;
-  width: 290px;
-  height: 150px;
-  background-color: transparent;
-  border: black 2.5px solid;
+position: absolute;
+top: 0;
+right: 0;
+overflow: hidden;
+width: 290px;
+height: 150px;
+background-color:transparent;
 }
 
-#login p {
-  font-family: "Staatliches", cursive;
+#login button {
+background-color: darkorange; 
+color: white;
+margin-left: 15px;
+padding: 10px 25px;
+text-align: center;
+font-size: 12px;
+cursor: pointer;
+border: none;
 }
-
-/* --- Buttons Login-Register-Logout --- */
-.square_btn {
-  text-decoration: none;
-  border: solid 2px darkorange;
-  border-radius: 8px;
-  margin-left: 10%;
-  margin-right: 5%;
-  background-color: darkorange;
-  color: white;
-  padding: 8px;
-  font-size: 16px;
-  cursor: pointer;
+#login button:hover{
+color: black;
+background-color: #C84300;
 }
-
-.square_btn:hover {
-  background: tomato;
-  color: black;
+/*Campos donde el usuario introducirá el usuario y password---------------------------*/
+.square_login {
+margin-left: 3%;
 }
-
-/* --- Navbar Buttons --- */
+.square_registrar {
+margin-left: 5%;
+margin-bottom: 5%;
+}
+/* Navbar Buttons */
 #navbar {
   position: relative;
-  text-align: center;
+    text-align: center;
+    width: 40%;
+    left: 30%;
 }
-
 /* --- Styles of dropdown ---*/
 .dropdown {
-  position: relative;
-  display: inline-block;
+position: relative;
+display: inline-block;
 }
-
+/*------------------quitar link botones menu----------------------*/
+.dropdown button a{
+text-decoration: none;
+}
 /* --- Styles Dropdown Menu --- */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+overflow: auto;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+z-index: 1;
 }
-
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
 }
-
-.dropdown a:hover {
+.dropdown-content a:hover {
   background-color: #ddd;
 }
-
 /* --- Container .dropdown | Styles Navbar buttons ---*/
 .dropbtn {
-  background-color: #ff8300;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+background-color: darkorange;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+font-family: 'Staatliches', cursive;
+font-weight: bold;
+color: black;
 }
-
+.show {
+display: block;
+}
 .dropbtn:hover,
 .dropbtn:focus {
-  background-color: #c84300;
-}
-
-.show {
-  display: block;
+background-color: #C84300;
 }
 
 /* MAIN */
@@ -157,8 +150,7 @@ h1 {
   left: 235px;
   width: 350px;
   height: 275px;
-  }
-
+}
   #aboutUs p {
    margin:0;
    position: relative;
@@ -166,18 +158,16 @@ h1 {
    top: -200px;
    width: 500px;
    height: 325px;
-  }
-
-  #aboutUs h2 {
+ }
+ #aboutUs h2 {
   margin:0;
   position: relative;
   left: 50px;
   top: 75px;
   width: 500px;
   height: 50px;
-  }
-  
-  #aboutUs button {
+}
+#aboutUs button {
   position: relative;
   top: 225px;
   right: 0px;
@@ -185,14 +175,12 @@ h1 {
   left: -220px;
   width: 100px;
   height: 50px;
-  }
-
-  #aboutUs button:hover{
+}
+#aboutUs button:hover{
   color: black;
   background-color: gray;
-  }
-
-  #aboutUs {
+}
+#aboutUs {
   margin: 0 auto;
   position: relative;
   left: 10px;
@@ -203,15 +191,12 @@ h1 {
   width: 1000px;
   height: 600px;
   background-color: darkorange;
-  }
-  
-  /*ABOUT US | Animación imagen ------------------*/
-  
-  #aboutUs  img {
+}
+/*Animación imagen ------------------*/
+#aboutUs  img {
   transition: 1s ease;
-  }
-  
-  #aboutUs  img:hover{
+}
+#aboutUs  img:hover{
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
@@ -219,110 +204,100 @@ h1 {
   }
 
 /* FOOTER */
-
 /* --- Filling Div - PENDIENTE MODIFICAR O ELIMINAR --- */
 .dummy_page {
-  height: 10px;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 10px 0px;
+height: 0px;
+width: 100%;
+background-color: #55D2F7;
+text-align: center;
+box-sizing: border-box;
+padding: 0px 0px;
 }
-
 /* STYLES SPECIFIC TO FOOTER  */
 .footer {
-  width: 2100px;
-  position: relative;
-  height: auto;
-  background-color: #070617;
+width: 100%;
+position: relative;
+height: auto;
+background-color: #070617;
 }
-
 .footer .col {
-  width: 190px;
-  height: auto;
-  float: left;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  padding: 0px 20px 20px 20px;
+width: 190px;
+height: auto;
+float: left;
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+padding: 0px 20px 20px 20px;
 }
-
 .footer .col h1 {
-  margin: 0;
-  padding: 0;
-  font-family: inherit;
-  font-size: 12px;
-  line-height: 17px;
-  padding: 20px 0px 5px 0px;
-  color: rgba(255, 255, 255, 0.2);
-  font-weight: normal;
-  text-transform: uppercase;
-  letter-spacing: 0.25em;
+margin: 0;
+padding: 0;
+font-family: inherit;
+font-size: 12px;
+line-height: 17px;
+padding: 20px 0px 5px 0px;
+color: rgba(255,255,255,0.2);
+font-weight: normal;
+text-transform: uppercase;
+letter-spacing: 0.250em;
 }
-
 .footer .col ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+list-style-type: none;
+margin: 0;
+padding: 0;
 }
-
 .footer .col ul li {
-  color: #999999;
-  font-size: 14px;
-  font-family: inherit;
-  font-weight: bold;
-  padding: 5px 0px 5px 0px;
-  cursor: pointer;
-  transition: 0.2s;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
+color: #999999;
+font-size: 14px;
+font-family: inherit;
+font-weight: bold;
+padding: 5px 0px 5px 0px;
+cursor: pointer;
+transition: .2s;
+-webkit-transition: .2s;
+-moz-transition: .2s;
 }
-
 .social ul li {
-  display: inline-block;
-  padding-right: 5px !important;
+display: inline-block;
+padding-right: 5px !important;
 }
 
 .footer .col ul li:hover {
-  color: green;
-  transition: 0.1s;
-  -webkit-transition: 0.1s;
-  -moz-transition: 0.1s;
+color: darkorange;
+transition: .1s;
+-webkit-transition: .1s;
+-moz-transition: .1s;
 }
 .clearfix {
-  clear: both;
+clear: both;
 }
-
 /* --- Responsive Design of Footer --- */
 @media only screen and (min-width: 1280px) {
-  .contain {
-    width: 1200px;
-    margin: 0 auto;
-  }
+.contain {
+  width: 1200px;
+  margin: 0 auto;
 }
-
+}
 @media only screen and (max-width: 1139px) {
-  .contain .social {
-    width: 1000px;
-    display: block;
-  }
-  .social h1 {
-    margin: 0px;
-  }
+.contain .social {
+  width: 1000px;
+  display: block;
 }
-
+.social h1 {
+  margin: 0px;
+}
+}
 @media only screen and (max-width: 950px) {
-  .footer .col {
-    width: 33%;
-  }
-  .footer .col h1 {
-    font-size: 14px;
-  }
-  .footer .col ul li {
-    font-size: 13px;
-  }
+.footer .col {
+  width: 33%;
 }
-
+.footer .col h1 {
+  font-size: 14px;
+}
+.footer .col ul li {
+  font-size: 13px;
+}
+}
 @media only screen and (max-width: 500px) {
   .footer .col {
     width: 50%;
@@ -334,109 +309,102 @@ h1 {
     font-size: 13px;
   }
 }
-
 @media only screen and (max-width: 340px) {
-  .footer .col {
-    width: 100%;
-  }
+.footer .col {
+  width: 100%;
+}
 }
 
 /* --- Footer Bottom paragraph ---*/
 #direccion {
-  background: #070617;
-  color: white;
-  text-align: center;
-  /* margin: auto; */
-  width: 100%;
+background: #070617;
+color: white;
+text-align: center;
+margin:auto;
 }
-
 /* --- Container #social-network --- */
 #social-network {
-  position: absolute;
-  bottom: 30px;
-  right: 100px;
-  color: #999999;
-  font-family: inherit;
-  font-weight: bold;
-}
+position: absolute;
+bottom: 30px;
+right: 100px;
+font-weight:  inherit;
+color: #999999;
+font-family: inherit;
+font-weight: bold;
 
+}
 /* Social Network icons */
 .shared {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  margin: 5px 0;
-  padding: 0;
-  background: url("../imagenes/shared.png") no-repeat;
-  float: left;
-  margin-right: 5px;
-  cursor: pointer;
-  border-radius: 50%;
+display: inline-block;
+width: 30px;
+height: 30px;
+margin: 5px 0;
+padding: 0;
+/* Recurso incluido en la descarga del ejemplo */
+background: url("../imagenes/shared.png") no-repeat;
+float: left;
+margin-right: 5px;
+cursor: pointer;
+border-radius: 50%;
 }
-
 .shared:hover {
-  opacity: 0.7;
+opacity: 0.7;
 }
-
 .shared.gp {
-  background-position: 0px 0px;
-  background-color: #e62b34;
+background-position: 0px 0px;
+background-color: #E62B34;
 }
-
 .shared.tt {
-  background-position: 0px -30px;
-  background-color: #43bdf0;
+background-position: 0px -30px;
+background-color: #43BDF0;
 }
-
 .shared.ce {
-  background-position: 0px -60px;
-  background-color: #8a898d;
+background-position: 0px -60px;
+background-color: #8A898D;
 }
-
 .shared.wa {
-  background-position: 0px -90px;
-  background-color: #0dc143;
+background-position: 0px -90px;
+background-color: #0dc143;
 }
-
 .shared.fb {
-  background-position: 0px -120px;
-  background-color: #6081c4;
+background-position: 0px -120px;
+background-color: #6081C4;
 }
-
+.st2 {
+border-radius: 0;
+}
+.st3 {
+border-radius: 5px;
+}
 /* --- Back to top Button Styles --- */
 #button {
-  display: inline-block;
-  background-color: darkorange;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 4px;
-  margin: 30px;
-  position: fixed;
-  bottom: 30px;
-  right: 3px;
-  transition: background-color 0.3s;
-  z-index: 1000;
+display: inline-block;
+background-color: darkorange;
+width: 50px;
+height: 50px;
+text-align: center;
+border-radius: 4px;
+margin: 30px;
+position: fixed;
+bottom: 30px;
+right: 3px;
+transition: background-color .3s;
+z-index: 1000;
 }
-
 #button:hover {
-  cursor: pointer;
-  background-color: #333;
+cursor: pointer;
+background-color: #333;
 }
-
 #button:active {
-  background-color: #555;
+background-color: #555;
 }
-
 #button::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
-  color: #fff;
+content: "\f077";
+font-family: FontAwesome;
+font-weight: normal;
+font-style: normal;
+font-size: 2em;
+line-height: 50px;
+color: #fff;
 }
-
-/*-----------------------------------------------*/
-
+ 

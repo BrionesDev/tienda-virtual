@@ -1,210 +1,422 @@
-﻿* {
-    box-sizing: border-box;
+﻿/* ALL ELEMENTS */
+/* Transparencia en bordes */
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
+}
+/* BODY */
+/* --- BODY | BACKGROUND COLOR ---*/
+body {
+  background-color: #55D2F7;
+}
+/* HEADER */
+/* --- HEADER | Define position of Header ---*/
+header {
+  position: relative;
+}
+/* --- Container of Header */
+/*.box-header {
+  width: 1850px;
+  height: 250px;
+}*/
+/* --- Logo-link --- */
+header>div>#logo>a {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+/* --- Logo --- */
+#logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 366px;
+  height: 78px;
+}
+/* --- Title of this page --- */
+#main-title {
+  font-size: 25px;
+  text-align: center;
+  color: darkorange;
+  font-family: 'Staatliches', cursive;
+}
+/* --- H1 | Main Title --- */
+#main-title h1 {
+  font-size: 50px;
+  text-align: center;
+  color: darkorange;
+  font-family: "Staatliches", cursive;
+}
+/* --- Box Login-Register-Logout --- */
+#login {
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  width: 290px;
+  height: 150px;
+  background-color:transparent;
 }
 
-.container {
-    width: 95%;
-    max-width: 900px;
-    padding: 32px 64px;
-    margin: auto;
+#login button {
+  background-color: darkorange; 
+  color: white;
+  margin-left: 15px;
+  padding: 10px 25px;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  border: none;
 }
-
-.social {
-    width: 48px;
-    position: fixed;
-    top: 50px;
-    right: 0;
+#login button:hover{
+  color: black;
+  background-color: #C84300;
 }
-
-.social {
-    top: 50%;
-    height: 205px;
-    margin-top: -100px;
+/*Campos donde el usuario introducirá el usuario y password---------------------------*/
+.square_login {
+  margin-left: 3%;
 }
-
-.shared-panel {
-    overflow: auto;
+.square_registrar {
+  margin-left: 5%;
+  margin-bottom: 5%;
 }
-
-.shared-panel span {
-    margin: 10px 0;
-    font-size: 16px;
-    font-weight: 600;
+/* Navbar Buttons */
+#navbar {
+  position: relative;
+    text-align: center;
+    width: 40%;
+    left: 30%;
 }
-
-.shared {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin: 5px 0;
-    padding: 0;
-    background: url("../imagenes/shared.png") no-repeat;
-    float: left;
-    margin-right: 5px;
-    cursor: pointer;
-    border-radius: 50%;
+/* --- Styles of dropdown ---*/
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
-
-.shared:hover {
-    opacity: 0.7;
+/*------------------quitar link botones menu----------------------*/
+.dropdown button a{
+  text-decoration: none;
 }
-
-.shared.gp {
-    background-position: 0px 0px;
-    background-color: #E62B34;
+/* --- Styles Dropdown Menu --- */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
-
-.shared.tt {
-    background-position: 0px -30px;
-    background-color: #43BDF0;
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
-
-.shared.ce {
-    background-position: 0px -60px;
-    background-color: #8A898D;
+.dropdown-content a:hover {
+  background-color: #ddd;
 }
-
-.shared.wa {
-    background-position: 0px -90px;
-    background-color: #0dc143;
-}
-
-.shared.fb {
-    background-position: 0px -120px;
-    background-color: #6081C4;
-}
-
-.st2 {
-    border-radius: 0;
-}
-
-.st3 {
-    border-radius: 5px;
-}
-
+/* --- Container .dropdown | Styles Navbar buttons ---*/
 .dropbtn {
-    background-color: #ff8300;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+  background-color: darkorange;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Staatliches', cursive;
+  font-weight: bold;
+  color: black;
 }
-
+.show {
+  display: block;
+}
 .dropbtn:hover,
 .dropbtn:focus {
-    background-color: #C84300;
+  background-color: #C84300;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
+/* MAIN */
+/* --- Cesta | Estructura, posicionamiento y estilos del bloque ---*/
+#cesta{
+  margin: 0 auto;
+  position: relative;
+  left: 10px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color:transparent;
+  width: 1000px;
+  height: 600px;
+  background-color: beige;
+}
+#cesta h2{
+  margin:0;
+  position: relative;
+  left: 15px;
+  top: 75px;
+  width: 500px;
+  height: 50px;
+  font-family: 'Staatliches', cursive;  
+  font-size: 35px;
+}
+#cesta button {
+position: absolute;
+bottom: 0;
+right: 0;
+width: 100px;
+height: 50px;
+margin: 50px;
+background-color: darkorange;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+#cesta button:hover{
+  color: black;
+  background-color: #C84300;
+}
+#cesta li {
+  list-style:none; 
+  font-size:25px;
+  font-family: 'Staatliches', cursive;  
+}
+#cesta ul li {
+  display: table-cell;
+  height: 100px;
+  list-style-type: none;
+  vertical-align: middle;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+#BloqueProductos{
+  border: solid 1px;
+}
+
+/*Bloque donde se muestra el total de la cesta*/
+#totalCesta{
+  position: absolute;
+  right: 0;
+  margin-right: 200px;
+  width: 110px;
+  height: 150px;
+  background-color: transparent;
+}
+#totalCesta p {
+font-size:25px;
+font-family: 'Staatliches', cursive;  
+}
+/*#cesta hr{
+border-left: 3px solid green;
+height: 300px;
+position: absolute;
+margin-right: 5px;
+}*/
+
+
+/* FOOTER */
+/* --- Filling Div - PENDIENTE MODIFICAR O ELIMINAR --- */
+.dummy_page {
+  height: 0px;
+  width: 100%;
+  background-color: #55D2F7;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0px 0px;
+}
+/* STYLES SPECIFIC TO FOOTER  */
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: #070617;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgba(255,255,255,0.2);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color: darkorange;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+/* --- Responsive Design of Footer --- */
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
     display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
 }
-
-.dropdown a:hover {
-    background-color: #ddd;
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
 }
-
-.show {
-    display: block;
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
 }
-
-#redes-sociales {
-    position: absolute;
-    bottom: 5px;
-    right: 10px;
-    font-weight: bold;
-}
-
-#main-title {
-    font-size: 25px;
-    text-align: center;
-    color: darkorange;
-    font-family: 'Staatliches', cursive;
-}
-
-h2 {
-    font-size: 200%;
-    text-align: center;
-    color: darkorange;
-    font-family: 'Staatliches', cursive;
-}
-
-#BloquePrincipal {
-    position: relative;
-    text-align: center;
-    display: table;
-}
-
-#EstructuraBotones {
-    position: relative;
-    text-align: center;
-}
-
-#logo {
-    position: absolute;
-    top: 0;
-    right: 0;
-    overflow: hidden;
-    width: 366px;
-    height: 78px;
-}
-
-#VaciarContinuar {
-    position: relative;
-    right: -970px;
-}
-
-table {
-    margin: auto;
-    width: 475px;
-    height: 130px;
-}
-
-textarea {
-    position: relative;
-    right: -870px;
-}
-
-body {
-    background-color: #d0fad2;
-}
-
-header>div>#logo>a {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-}
-
-header {
-    position: relative;
-}
-
-.container-social-networks {
+@media only screen and (max-width: 340px) {
+  .footer .col {
     width: 100%;
-    text-align: right;
+  }
 }
 
+/* --- Footer Bottom paragraph ---*/
+  #direccion {
+  background: #070617;
+  color: white;
+  text-align: center;
+  margin:auto;
+}
+/* --- Container #social-network --- */
+#social-network {
+  position: absolute;
+  bottom: 30px;
+  right: 100px;
+  font-weight:  inherit;
+  color: #999999;
+  font-family: inherit;
+  font-weight: bold;
+  
+}
+/* Social Network icons */
+.shared {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 5px 0;
+  padding: 0;
+  /* Recurso incluido en la descarga del ejemplo */
+  background: url("../imagenes/shared.png") no-repeat;
+  float: left;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.shared:hover {
+  opacity: 0.7;
+}
+.shared.gp {
+  background-position: 0px 0px;
+  background-color: #E62B34;
+}
+.shared.tt {
+  background-position: 0px -30px;
+  background-color: #43BDF0;
+}
+.shared.ce {
+  background-position: 0px -60px;
+  background-color: #8A898D;
+}
+.shared.wa {
+  background-position: 0px -90px;
+  background-color: #0dc143;
+}
+.shared.fb {
+  background-position: 0px -120px;
+  background-color: #6081C4;
+}
+.st2 {
+  border-radius: 0;
+}
+.st3 {
+  border-radius: 5px;
+}
+/* --- Back to top Button Styles --- */
+#button {
+  display: inline-block;
+  background-color: darkorange;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 3px;
+  transition: background-color .3s;
+  z-index: 1000;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
 
-/*.box-header {
-    width: 1850px;
-    height: 250px;
-}+/

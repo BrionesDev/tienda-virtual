@@ -1,105 +1,106 @@
+
+/* ALL ELEMENTS */
+/* Transparencia en bordes */
 * {
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
-
+/* BODY */
+/* --- BODY | BACKGROUND COLOR ---*/
 body {
-  background-color: #d0fad2;
+  background-color: #55D2F7;
 }
-
-.social {
-  /* las imágenes usadas tienen width de 48px */
-  width: 48px;
-  position: fixed;
-  top: 50px;
-  right: 0;
+/* HEADER */
+/* --- HEADER | Define position of Header ---*/
+header {
+  position: relative;
 }
-
-/* Extra centrado vertical */
-
-.social {
-  /* border:1px solid #000; */
+/* --- Container of Header */
+/*.box-header {
+  width: 1850px;
+  height: 250px;
+}*/
+/* --- Logo-link --- */
+header>div>#logo>a {
+  position: absolute;
   top: 50%;
-  height: 205px;
-  /* para poner height 192 deberíamos haber indicado en el reset de estilos font-size:0; */
-  margin-top: -100px;
+  left: 0;
+  transform: translateY(-50%);
 }
-
-.shared-panel {
-  overflow: auto;
+/* --- Logo --- */
+#logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 366px;
+  height: 78px;
+}
+/* --- Title of this page --- */
+#main-title {
+  font-size: 25px;
   text-align: center;
+  color: darkorange;
+  font-family: 'Staatliches', cursive;
+}
+/* --- H1 | Main Title --- */
+#main-title h1 {
+  font-size: 50px;
+  text-align: center;
+  color: darkorange;
+  font-family: "Staatliches", cursive;
+}
+/* --- Box Login-Register-Logout --- */
+#login {
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  width: 290px;
+  height: 150px;
+  background-color:transparent;
 }
 
-.shared-panel span {
-  margin: 10px 0;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.shared {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  margin: 5px 0;
-  padding: 0;
-  /* Recurso incluido en la descarga del ejemplo */
-  background: url("../imagenes/shared.png") no-repeat;
-  float: left;
-  margin-right: 5px;
-  cursor: pointer;
-  border-radius: 50%;
-}
-
-.shared:hover {
-  opacity: 0.7;
-}
-
-.shared.gp {
-  background-position: 0px 0px;
-  background-color: #e62b34;
-}
-
-.shared.tt {
-  background-position: 0px -30px;
-  background-color: #43bdf0;
-}
-
-.shared.ce {
-  background-position: 0px -60px;
-  background-color: #8a898d;
-}
-
-.shared.wa {
-  background-position: 0px -90px;
-  background-color: #0dc143;
-}
-
-.shared.fb {
-  background-position: 0px -120px;
-  background-color: #6081c4;
-}
-
-.st2 {
-  border-radius: 0;
-}
-
-.st3 {
-  border-radius: 5px;
-}
-
-.dropbtn {
-  background-color: darkorange;
+#login button {
+  background-color: darkorange; 
   color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+  margin-left: 15px;
+  padding: 10px 25px;
+  text-align: center;
+  font-size: 12px;
   cursor: pointer;
+  border: none;
 }
-
+#login button:hover{
+  color: black;
+  background-color: #C84300;
+}
+/*Campos donde el usuario introducirá el usuario y password---------------------------*/
+.square_login {
+  margin-left: 3%;
+}
+.square_registrar {
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+/* Navbar Buttons */
+#navbar {
+  position: relative;
+    text-align: center;
+    width: 40%;
+    left: 30%;
+}
+/* --- Styles of dropdown ---*/
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
+/*------------------quitar link botones menu----------------------*/
+.dropdown button a{
+  text-decoration: none;
+}
+/* --- Styles Dropdown Menu --- */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -109,31 +110,77 @@ body {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-
-.dropdown a:hover {
+.dropdown-content a:hover {
   background-color: #ddd;
+}
+/* --- Container .dropdown | Styles Navbar buttons ---*/
+.dropbtn {
+  background-color: darkorange;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Staatliches', cursive;
+  font-weight: bold;
+  color: black;
 }
 
 .show {
   display: block;
 }
-
-#EstructuraBotones {
-  position: relative;
-  text-align: center;
-}
-
 .dropbtn:hover,
 .dropbtn:focus {
-  background-color: #c84300;
+  background-color: #C84300;
 }
+
+
+/* MAIN */
+/* --- Principal | Estructura, posicionamiento y estilos del bloque ---*/
+.container {
+  width: 95%;
+  max-width: 900px;
+  padding: 32px 64px;
+  margin: auto;
+}
+.social {
+  /* las imágenes usadas tienen width de 48px */
+  width: 48px;
+  position: fixed;
+  top: 50px;
+  right: 0;
+}
+/* Extra centrado vertical */
+.social {
+  /* border:1px solid #000; */
+  top: 50%;
+  height: 205px;
+  /* para poner height 192 deberíamos haber indicado en el reset de estilos font-size:0; */
+  margin-top: -100px;
+}
+.shared-panel {
+  overflow: auto;
+  text-align: center;
+}
+.shared-panel span {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.st2 {
+  border-radius: 0;
+}
+.st3 {
+  border-radius: 5px;
+}
+
 
 .news {
   display: inline;
@@ -247,93 +294,37 @@ body {
   font-weight: bold;
   font-family: "Staatliches", cursive;
 }
-
 .container-social-networks {
   width: 100%;
   text-align: right;
 }
-
-#redes-sociales {
-  position: absolute;
-  bottom: 5px;
-  right: 10px;
-  font-weight: bold;
-  color: #ddd;
+.news>ul>li:nth-child(1)>.new>.new--image {
+  background-image: url('../imagenes/Noticia1.jpg');
 }
-
-.news > ul > li:nth-child(1) > .new > .new--image {
-  background-image: url("../imagenes/Noticia1.jpg");
+.news>ul>li:nth-child(2)>.new>.new--image {
+  background-image: url('../imagenes/Noticia2.jpg');
 }
-
-.news > ul > li:nth-child(2) > .new > .new--image {
-  background-image: url("../imagenes/Noticia2.jpg");
+.news>ul>li:nth-child(3)>.new>.new--image {
+  background-image: url('../imagenes/Noticia3.jpg');
 }
-
-.news > ul > li:nth-child(3) > .new > .new--image {
-  background-image: url("../imagenes/Noticia3.jpg");
-}
-
-.news > ul > li:nth-child(4) > .new > .new--image {
-  background-image: url("../imagenes/sample1.jpg");
-}
-
-.news > ul > li:nth-child(5) > .new > .new--image {
-  background-image: url("../imagenes/sample2.jpg");
-}
-
-.news > ul > li:nth-child(6) > .new > .new--image {
-  background-image: url("../imagenes/sample3.jpg");
-}
-.news > ul > li:nth-child(7) > .new > .new--image {
-  background-image: url("../imagenes/sample4.jpg");
-}
-.news > ul > li:nth-child(8) > .new > .new--image {
-  background-image: url("../imagenes/sample5.jpg");
-}
-
 hr {
   color: red;
   font-weight: bolder;
 }
-
-#main-title {
-  font-size: 25px;
-  text-align: center;
-  color: darkorange;
-  font-family: "Staatliches", cursive;
+.news>ul>li>.new>.new--content>.new--c--description>p {
+  font-family: 'Staatliches', cursive;
 }
 
-#logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  width: 366px;
-  height: 78px;
-}
 
-header > div > #logo > a {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-}
-
-header {
-  position: relative;
-}
-
-.news > ul > li > .new > .new--content > .new--c--description > p {
-  font-family: "Staatliches", cursive;
-}
-
+/* FOOTER */
+/* --- Filling Div - PENDIENTE MODIFICAR O ELIMINAR --- */
 .dummy_page {
-  height: 10px;
+  height: 0px;
   width: 100%;
-  background-color: #d0fad2;
+  background-color: #55D2F7;
   text-align: center;
   box-sizing: border-box;
-  padding: 10px 0px;
+  padding: 0px 0px;
 }
 /* STYLES SPECIFIC TO FOOTER  */
 .footer {
@@ -358,10 +349,10 @@ header {
   font-size: 12px;
   line-height: 17px;
   padding: 20px 0px 5px 0px;
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255,255,255,0.2);
   font-weight: normal;
   text-transform: uppercase;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.250em;
 }
 .footer .col ul {
   list-style-type: none;
@@ -375,9 +366,9 @@ header {
   font-weight: bold;
   padding: 5px 0px 5px 0px;
   cursor: pointer;
-  transition: 0.2s;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
 }
 .social ul li {
   display: inline-block;
@@ -385,14 +376,15 @@ header {
 }
 
 .footer .col ul li:hover {
-  color: green;
-  transition: 0.1s;
-  -webkit-transition: 0.1s;
-  -moz-transition: 0.1s;
+  color: darkorange;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
 }
 .clearfix {
   clear: both;
 }
+/* --- Responsive Design of Footer --- */
 @media only screen and (min-width: 1280px) {
   .contain {
     width: 1200px;
@@ -420,15 +412,15 @@ header {
   }
 }
 @media only screen and (max-width: 500px) {
-  .footer .col {
-    width: 50%;
-  }
-  .footer .col h1 {
-    font-size: 14px;
-  }
-  .footer .col ul li {
-    font-size: 13px;
-  }
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
 }
 @media only screen and (max-width: 340px) {
   .footer .col {
@@ -436,8 +428,68 @@ header {
   }
 }
 
-/*-----------------------------------------------*/
-/* Botón de ir hacía arriba*/
+/* --- Footer Bottom paragraph ---*/
+  #direccion {
+  background: #070617;
+  color: white;
+  text-align: center;
+  margin:auto;
+}
+/* --- Container #social-network --- */
+#social-network {
+  position: absolute;
+  bottom: 30px;
+  right: 100px;
+  font-weight:  inherit;
+  color: #999999;
+  font-family: inherit;
+  font-weight: bold;
+  
+}
+/* Social Network icons */
+.shared {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 5px 0;
+  padding: 0;
+  /* Recurso incluido en la descarga del ejemplo */
+  background: url("../imagenes/shared.png") no-repeat;
+  float: left;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.shared:hover {
+  opacity: 0.7;
+}
+.shared.gp {
+  background-position: 0px 0px;
+  background-color: #E62B34;
+}
+.shared.tt {
+  background-position: 0px -30px;
+  background-color: #43BDF0;
+}
+.shared.ce {
+  background-position: 0px -60px;
+  background-color: #8A898D;
+}
+.shared.wa {
+  background-position: 0px -90px;
+  background-color: #0dc143;
+}
+.shared.fb {
+  background-position: 0px -120px;
+  background-color: #6081C4;
+}
+.st2 {
+  border-radius: 0;
+}
+.st3 {
+  border-radius: 5px;
+}
+/* --- Back to top Button Styles --- */
 #button {
   display: inline-block;
   background-color: darkorange;
@@ -449,7 +501,7 @@ header {
   position: fixed;
   bottom: 30px;
   right: 3px;
-  transition: background-color 0.3s;
+  transition: background-color .3s;
   z-index: 1000;
 }
 #button:hover {
@@ -459,7 +511,6 @@ header {
 #button:active {
   background-color: #555;
 }
-
 #button::after {
   content: "\f077";
   font-family: FontAwesome;
@@ -470,58 +521,31 @@ header {
   color: #fff;
 }
 
-/*-----------------------------------------------*/
-/* Caja donde se mostrará el user, logout etc */
 
-#login {
-  position: absolute;
-  top: 0;
-  right: 0;
-  overflow: hidden;
-  width: 290px;
-  height: 150px;
-  background-color: transparent;
-  border: black 2.5px solid;
-}
 
-#login p {
-  font-family: "Staatliches", cursive;
-}
 
-/* --- Login Button --- */
-.square_btn {
-  text-decoration: none;
-  color: darkorange;
-  border: solid 2px darkorange;
-  border-radius: 8px;
-  margin-left: 10%;
-  margin-right: 5%;
-  background-color: darkorange;
-  color: white;
-  padding: 8px;
-  font-size: 16px;
-  cursor: pointer;
-}
 
-.square_btn:hover {
-  background: tomato;
-  color: black;
-}
 
-/*dirección*/
-#direccion {
-  background: #070617;
-  color: white;
-  text-align: center;
-  margin: auto;
-}
 
-/*-----------------------------------------------*/
-.square_login {
-  margin-left: 3%;
-}
 
-.square_registrar {
-  margin-left: 5%;
-  margin-bottom: 5%;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
